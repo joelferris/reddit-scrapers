@@ -1,0 +1,19 @@
+import praw
+from bs4 import BeautifulSoup
+
+reddit = praw.Reddit(
+    client_id="iWlkphAYAB1lFA",
+    client_secret="Svuq7Hu3i5QeeuwZk9oq1j8oSKiGOQ",
+    user_agent="nothingfuture bike scrape by /u/jolef",
+    username="jolef",
+    password="soccer"
+)
+
+print(reddit.read_only)
+
+for comment in reddit.redditor("nothingfuture").comments.top("year"):
+    print("the genius of u/nothingfuture commenting on pictures of bicycles")
+    print(submission.title)
+    print(comment.submission.url)
+    print(comment.body)
+    print(comment.permalink)
