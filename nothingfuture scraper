@@ -2,11 +2,11 @@ import praw
 from bs4 import BeautifulSoup
 
 reddit = praw.Reddit(
-    client_id="iWlkphAYAB1lFA",
-    client_secret="Svuq7Hu3i5QeeuwZk9oq1j8oSKiGOQ",
+    client_id="***",
+    client_secret="***",
     user_agent="nothingfuture bike scrape by /u/jolef",
-    username="jolef",
-    password="soccer"
+    username="***",
+    password="***"
 )
 
 print(reddit.read_only)
